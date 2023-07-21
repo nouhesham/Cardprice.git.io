@@ -1,0 +1,146 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  background-color: bisque;
+  margin: 0;
+}
+img {
+  width: 100%;
+  display: block;
+  border-radius: 10px 0 0 10px;
+}
+section {
+  min-height: 100vh;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+h6 {
+  font-weight: 100;
+  letter-spacing: 0.8rem;
+  margin: 0;
+  font-size: 0.8rem;
+
+  color: gray;
+}
+p {
+  line-height: 2rem;
+  font-weight: 400;
+  font-size: 1rem;
+  width: 90%;
+  color: gray;
+}
+
+.main-content {
+  width: 50%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 12px;
+}
+.image {
+  width: 55%;
+}
+h1 {
+  font-size: 2.5rem;
+}
+.price {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.second-column {
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 5px 30px;
+  margin-left: 10px;
+  text-align: left;
+}
+h2 {
+  font-size: 2.3rem;
+  color: #2e742e;
+  padding-right: 10px;
+  /* display: inline-block; */
+}
+.sale {
+  padding-left: 10px;
+  font-weight: 100;
+  text-decoration: line-through;
+  color: gray;
+}
+
+.button {
+  background-color: #2e742e;
+
+  padding: 12px;
+  width: 100%;
+  justify-content: center;
+  margin: auto;
+  text-align: center;
+  border-radius: 10px;
+
+  cursor: pointer;
+}
+.button:hover {
+  background-color: rgb(3, 43, 3);
+}
+.button-content {
+  color: white;
+  padding: 10px;
+}
+.icon {
+  display: inline-block;
+}
+@media screen and (max-width: 1000px) {
+  h6 {
+    margin-top: 20px;
+  }
+  .main-content {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 12px;
+  }
+  p {
+    margin-top: 0;
+  }
+  .price {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .sale {
+    padding-left: 0px;
+    font-weight: 100;
+    text-decoration: line-through;
+    color: gray;
+  }
+  .second-column {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 5px 2px;
+
+    text-align: left;
+  }
+  .button {
+    width: 80%;
+  }
+  .image {
+    width: 100%;
+  }
+}
